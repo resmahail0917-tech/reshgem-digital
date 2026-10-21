@@ -1,0 +1,192 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10100f">
+<title>RESHGEM DIGITAL | Digital Experiences</title>
+<style>
+:root{--bg:#10100f;--panel:#1b1a18;--gold:#d8b875;--cream:#f6f0e6;--muted:#b8b2a7}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--cream);font-family:Arial,Helvetica,sans-serif;line-height:1.6}
+a{color:inherit;text-decoration:none}
+button,input,select{font:inherit}
+button{cursor:pointer}
+header{position:sticky;top:0;z-index:10;background:#10100fee;border-bottom:1px solid #39352d;padding:16px 5%;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.logo{font-weight:800;letter-spacing:2px;color:var(--gold);font-size:18px}
+nav{display:flex;gap:18px;flex-wrap:wrap;font-size:13px}
+nav a:hover{color:var(--gold)}
+.hero{padding:85px 6% 75px;min-height:520px;display:flex;align-items:center;background:radial-gradient(ellipse at 80% 25%,#6c512a66,transparent 40%),linear-gradient(120deg,#171612,#10100f 65%)}
+.hero-inner{max-width:850px}
+.eyebrow{color:var(--gold);text-transform:uppercase;letter-spacing:4px;font-size:12px}
+h1{font-size:clamp(42px,8vw,82px);line-height:1.05;letter-spacing:-2px;margin:18px 0}
+h1 span,.gold{color:var(--gold)}
+p{color:var(--muted)}
+.hero p{max-width:600px;font-size:18px}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{display:inline-block;border:1px solid var(--gold);background:var(--gold);color:#17130c;padding:12px 20px;border-radius:4px;font-weight:700}
+.btn.outline{background:transparent;color:var(--gold)}
+section{padding:65px 6%;scroll-margin-top:80px}
+.section-head{max-width:720px;margin-bottom:28px}
+h2{font-size:clamp(28px,5vw,43px);line-height:1.15;margin:8px 0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:18px}
+.card{background:var(--panel);border:1px solid #37332b;border-radius:8px;padding:23px}
+.card .symbol{font-size:28px}
+.card h3{margin:10px 0 4px}
+.card p{font-size:14px}
+.card .btn{margin-top:10px;font-size:13px}
+.booking{background:#171613}
+form{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px}
+label{display:block;color:var(--muted);font-size:13px;margin-bottom:5px}
+input,select{width:100%;padding:12px;background:#10100f;color:var(--cream);border:1px solid #49443a;border-radius:4px}
+form .btn{align-self:end}
+.notice{font-size:12px;color:var(--muted)}
+.status{display:none;margin-top:18px;padding:16px;border:1px solid var(--gold);border-radius:6px;color:var(--cream)}
+.menu-item{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:1px solid #39352d;padding:13px 0}
+.price{color:var(--gold);font-weight:700}
+.menu-item button{background:transparent;border:1px solid var(--gold);color:var(--gold);border-radius:4px;padding:6px 12px}
+.cart{background:#111;border:1px solid #39352d;border-radius:6px;padding:18px;margin-top:22px}
+footer{padding:32px 6%;border-top:1px solid #39352d;text-align:center}
+footer p{font-size:12px}
+@media(max-width:600px){header{align-items:flex-start;flex-direction:column}nav{gap:12px}.hero{padding-top:65px;min-height:460px}section{padding:48px 5%}}
+</style>
+</head>
+<body>
+<header>
+<a class="logo" href="#home">RESHGEM <span>DIGITAL</span></a>
+<nav>
+<a href="#services">Services</a>
+<a href="#travel">Travel</a>
+<a href="#restaurant">Restaurant</a>
+<a href="#store">Store</a>
+<a href="#tracking">Tracking</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="hero-inner">
+<div class="eyebrow">Creative Technology · Digital Solutions</div>
+<h1>One vision.<br><span>Endless possibilities.</span></h1>
+<p>Discover a smarter digital experience for travel, hospitality, food ordering and online shopping — presented by ReshGem Digital.</p>
+<div class="actions">
+<a class="btn" href="#services">Explore Our Solutions ↗</a>
+<a class="btn outline" href="#contact">Start a Project</a>
+</div>
+</div>
+</section>
+
+<section id="services">
+<div class="section-head"><div class="eyebrow">What we create</div><h2>Digital solutions for <span class="gold">modern businesses.</span></h2><p>A concept website showcasing how different business services can come together in one polished online experience.</p></div>
+<div class="grid">
+<article class="card"><div class="symbol">✈️</div><h3>Travel & Hotels</h3><p>Explore destinations, choose travel dates and try a hotel booking enquiry.</p><a class="btn outline" href="#travel">Explore travel</a></article>
+<article class="card"><div class="symbol">🍽️</div><h3>Restaurant Ordering</h3><p>Browse a sample menu, add dishes to your cart and prepare a demo order.</p><a class="btn outline" href="#restaurant">View menu</a></article>
+<article class="card"><div class="symbol">🛍️</div><h3>Online Store</h3><p>Discover sample products and add items to a simple shopping cart.</p><a class="btn outline" href="#store">Shop products</a></article>
+<article class="card"><div class="symbol">📦</div><h3>Order Tracking</h3><p>Try a sample order lookup with a simulated delivery status.</p><a class="btn outline" href="#tracking">Track an order</a></article>
+</div>
+</section>
+
+<section class="booking" id="travel">
+<div class="section-head"><div class="eyebrow">Your next escape</div><h2>Travel & hotel <span class="gold">booking.</span></h2><p>Choose your preferences to preview a booking enquiry. No reservation is actually made.</p></div>
+<form id="bookingForm">
+<div><label for="destination">Destination</label><input id="destination" required placeholder="e.g. Cebu, Philippines"></div>
+<div><label for="checkin">Check-in</label><input id="checkin" type="date" required></div>
+<div><label for="checkout">Check-out</label><input id="checkout" type="date" required></div>
+<div><label for="guests">Guests</label><select id="guests"><option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option></select></div>
+<button class="btn" type="submit">Preview Booking Enquiry</button>
+</form>
+<div class="status" id="bookingResult" aria-live="polite"></div>
+</section>
+
+<section id="restaurant">
+<div class="section-head"><div class="eyebrow">Freshly served</div><h2>Restaurant <span class="gold">ordering.</span></h2><p>Sample menu for the demo. Add items to your cart to test the interaction.</p></div>
+<div class="grid">
+<article class="card"><div class="symbol">🍝</div><h3>Signature Pasta</h3><p>Creamy pasta with herbs and parmesan.</p><div class="price">₱320</div><button class="btn" onclick="addItem('Signature Pasta',320)">Add to order</button></article>
+<article class="card"><div class="symbol">🍗</div><h3>Crispy Chicken</h3><p>Golden crispy chicken with house dip.</p><div class="price">₱280</div><button class="btn" onclick="addItem('Crispy Chicken',280)">Add to order</button></article>
+<article class="card"><div class="symbol">🐟</div><h3>Grilled Salmon</h3><p>Grilled salmon with seasonal vegetables.</p><div class="price">₱450</div><button class="btn" onclick="addItem('Grilled Salmon',450)">Add to order</button></article>
+</div>
+<div class="cart"><h3>Your demo cart</h3><div id="restaurantCart">No items yet.</div><p>Total: <strong class="gold" id="restaurantTotal">₱0</strong></p><button class="btn" onclick="placeDemoOrder()">Preview Demo Order</button><div class="status" id="restaurantResult" aria-live="polite"></div></div>
+</section>
+
+<section class="booking" id="store">
+<div class="section-head"><div class="eyebrow">Curated essentials</div><h2>The online <span class="gold">store.</span></h2><p>Sample product cards with a working demo cart. No real products are sold through this prototype.</p></div>
+<div class="grid">
+<article class="card"><div class="symbol">👜</div><h3>Everyday Tote</h3><p>Minimal style for everyday use.</p><div class="price">₱650</div><button class="btn" onclick="addItem('Everyday Tote',650)">Add to cart</button></article>
+<article class="card"><div class="symbol">🕯️</div><h3>Amber Candle</h3><p>A warm scent for a relaxed space.</p><div class="price">₱390</div><button class="btn" onclick="addItem('Amber Candle',390)">Add to cart</button></article>
+<article class="card"><div class="symbol">☕</div><h3>Signature Mug</h3><p>A timeless ceramic coffee mug.</p><div class="price">₱280</div><button class="btn" onclick="addItem('Signature Mug',280)">Add to cart</button></article>
+</div>
+<div class="cart"><h3>Shopping cart</h3><div id="storeCart">No items yet.</div><p>Total: <strong class="gold" id="storeTotal">₱0</strong></p><button class="btn" onclick="checkoutDemo()">Preview Checkout</button><div class="status" id="storeResult" aria-live="polite"></div></div>
+</section>
+
+<section id="tracking">
+<div class="section-head"><div class="eyebrow">Stay informed</div><h2>Order <span class="gold">tracking.</span></h2><p>Enter the sample tracking number to preview a delivery status. This is simulated, not connected to a courier.</p></div>
+<form id="trackingForm">
+<div><label for="orderId">Demo tracking number</label><input id="orderId" placeholder="e.g. RG1024" required></div>
+<button class="btn" type="submit">Check Status</button>
+</form>
+<div class="status" id="trackingResult" aria-live="polite"></div>
+</section>
+
+<section class="booking" id="contact">
+<div class="section-head"><div class="eyebrow">Let's collaborate</div><h2>Build something <span class="gold">remarkable.</span></h2><p>Tell us what kind of website your business needs.</p></div>
+<form id="contactForm">
+<div><label for="name">Your name</label><input id="name" required placeholder="Full name"></div>
+<div><label for="email">Email address</label><input id="email" type="email" required placeholder="you@example.com"></div>
+<div><label for="project">Project type</label><select id="project"><option>Business website</option><option>Hotel booking</option><option>Restaurant ordering</option><option>E-commerce store</option><option>Custom platform</option></select></div>
+<button class="btn" type="submit">Preview Inquiry</button>
+</form>
+<div class="status" id="contactResult" aria-live="polite"></div>
+<p class="notice">Demo form only. It does not send or store your personal information.</p>
+</section>
+</main>
+
+<footer>
+<a class="logo" href="#home">RESHGEM DIGITAL</a>
+<p>Digital experiences crafted by ReshGem Productions.</p>
+<p>© <span id="year"></span> ReshGem Digital · Portfolio concept demo</p>
+<p class="notice">Sample booking, shopping, checkout and tracking only. No live payments or external reservations.</p>
+</footer>
+
+<script>
+const money=n=>'₱'+n.toLocaleString('en-PH');
+let restaurantItems=[],storeItems=[];
+function addItem(name,price){
+const isStore=['Everyday Tote','Amber Candle','Signature Mug'].includes(name);
+(isStore?storeItems:restaurantItems).push({name,price});
+renderCarts();
+}
+function renderCarts(){
+[['restaurant',restaurantItems],['store',storeItems]].forEach(([key,items])=>{
+document.getElementById(key+'Cart').innerHTML=items.length?items.map(x=>`<div class="menu-item"><span>${x.name}</span><span class="price">${money(x.price)}</span></div>`).join(''):'No items yet.';
+document.getElementById(key+'Total').textContent=money(items.reduce((s,x)=>s+x.price,0));
+});
+}
+function placeDemoOrder(){
+const el=document.getElementById('restaurantResult');el.style.display='block';
+el.textContent=restaurantItems.length?'Demo order preview ready: '+restaurantItems.length+' item(s), total '+money(restaurantItems.reduce((s,x)=>s+x.price,0))+'. No order was sent.':'Please add a menu item first.';
+}
+function checkoutDemo(){
+const el=document.getElementById('storeResult');el.style.display='block';
+el.textContent=storeItems.length?'Demo checkout ready: '+storeItems.length+' product(s), total '+money(storeItems.reduce((s,x)=>s+x.price,0))+'. No payment was taken.':'Please add a product first.';
+}
+document.getElementById('bookingForm').addEventListener('submit',e=>{
+e.preventDefault();const a=document.getElementById('checkin').value,b=document.getElementById('checkout').value;
+const el=document.getElementById('bookingResult');el.style.display='block';
+if(b<=a){el.textContent='Please choose a check-out date after check-in.';return}
+el.textContent='Demo enquiry: '+document.getElementById('destination').value+', '+a+' to '+b+', '+document.getElementById('guests').value+'. No booking has been made.';
+});
+document.getElementById('trackingForm').addEventListener('submit',e=>{
+e.preventDefault();const id=document.getElementById('orderId').value.trim().toUpperCase(),el=document.getElementById('trackingResult');el.style.display='block';
+el.textContent=id==='RG1024'?'RG1024 · Demo status: Out for delivery. This is a sample status, not live courier data.':'Demo tracking number not found. Try RG1024.';
+});
+document.getElementById('contactForm').addEventListener('submit',e=>{
+e.preventDefault();const el=document.getElementById('contactResult');el.style.display='block';
+el.textContent='Inquiry preview ready for '+document.getElementById('name').value+' · '+document.getElementById('project').value+'. This demo does not send your information.';
+});
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
